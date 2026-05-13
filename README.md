@@ -100,7 +100,13 @@ The interface is built around the idea that the AI should do the work, not narra
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=quillic/quillic&type=Date)](https://star-history.com/#quillic/quillic&Date)
+<a href="https://www.star-history.com/?type=date&repos=quillic%2Fquillic">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=quillic/quillic&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=quillic/quillic&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=quillic/quillic&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ---
 
