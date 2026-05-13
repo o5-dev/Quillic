@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quillic.ai</title>
+  <style>
+    :root, [data-theme="dark"] {
+      --bg0: #1F1F1E;
+      --bg1: #2C2C2A;
+      --bg2: #262626;
+      --bg3: #313131;
+      --bg4: #333333;
+      --bg5: #3A3938;
+      --bg6: #4F4F4C;
+      --mt: #787771;
+      --ac: #C6613F;
+      --ac-dim: rgba(198,97,63,.15);
+      --ac-border: rgba(198,97,63,.3);
+      --tx: #F2F2F0;
+      --tx2: rgba(242,242,240,.6);
+      --success: #34d399;
+      --warning: #fbbf24;
+      --error: #f87171;
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-ui: -apple-system, 'Söhne', 'Inter', sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg0: #F5F4F0;
+      --bg1: #ECEAE4;
+      --bg2: #E6E4DE;
+      --bg3: #DDDBD4;
+      --bg4: #D8D6CE;
+      --bg5: #CCCAC2;
+      --bg6: #B0AEA6;
+      --mt: #787771;
+      --ac: #C6613F;
+      --ac-dim: rgba(198,97,63,.12);
+      --ac-border: rgba(198,97,63,.35);
+      --tx: #1A1917;
+      --tx2: rgba(26,25,23,.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg0);
+      color: var(--tx);
+      overflow: hidden;
+      font-size: 13.5px;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg5);
+      border-radius: 3px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.18s ease forwards;
+    }
+
+    .slide-up {
+      animation: slideUp 0.22s ease forwards;
+    }
+
+    .mono {
+      font-family: var(--font-mono) !important;
+    }
+
+    .resize-handle {
+      cursor: col-resize;
+      user-select: none;
+    }
+
+    .resize-handle:hover {
+      background: rgba(198,97,63,0.35) !important;
+    }
+
+    .resize-handle-v {
+      cursor: row-resize;
+      user-select: none;
+    }
+
+    .resize-handle-v:hover {
+      background: rgba(198,97,63,0.35) !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/renderer/main.tsx"></script>
+</body>
+</html>
